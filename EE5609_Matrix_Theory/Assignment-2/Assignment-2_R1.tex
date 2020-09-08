@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\pagenumbering{gobble}
+
+\title{EE5609 Matrix Theory}
+\author{Kranthi Kumar P}
+\date{September 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Assignment-2}
+\subsection{Problem}
+Lines and Planes (81) : In each of the following cases, determine the normal to the plane and the distance from the origin.\\[6pt]
+$a)\ \myvect{(0\ 0\ 1)}\bold{x} = 2 \hspace{50}c)\ \myvect{(0\ 5\ 0)}\bold{x} = -8$\\[6pt]
+$b)\ \myvect{(1\ 1\ 1)}\bold{x} = 1 \hspace{50}d)\ \myvect{(2\ 3\ -1)}\bold{x} = 5$\\[6pt]
+\subsection{Solution}
+If $ax+by+cz=d$ is a linear equation representing a plane, then the normal to that plane $\vec{\bold{n}}$ is the coefficients of the linear equation.
+$$ \vec{\bold{n}} = \begin{pmatrix}a\\ b\\ c \end{pmatrix}$$
+The equation of plane can be written as  $$\bold{n}^T\bold{x} = d$$
+The shortest distance between the plane given by $\bold{n}^T\bold{x} = d$ and origin is 
+$$\left |\frac{\abs{d}}{\lVert \vec{\bold{n}} \rVert}\right |$$
+
+a) \\
+normal vector $\hspace{10} \vec{\bold{n}} = \begin{pmatrix}0\\ 0\\ 1 \end{pmatrix}$\\
+d = 2\\
+shortest distance from origin = $$\left | \frac{2}{\sqrt{0^2+0^2+1^2}}\right | = 2$$\\[10pt]
+
+b) \\
+normal vector $\hspace{10} \vec{\bold{n}} =  \begin{pmatrix}1\\ 1\\ 1 \end{pmatrix}$\\
+d = 1\\
+shortest distance from origin = $$\left | \frac{1}{\sqrt{1^2+1^2+1^2}}\right | = \frac{1}{\sqrt{3}}$$\\[10pt]
+
+c) \\
+normal vector $\hspace{10} \vec{\bold{n}} =  \begin{pmatrix}0\\ 5\\ 0 \end{pmatrix}$\\
+d = -8\\
+shortest distance from origin = $$\left | \frac{-8}{\sqrt{0^2+5^2+0^2}}\right | = \frac{8}{5}$$\\[10pt]
+
+d) \\
+normal vector $\hspace{10} \vec{\bold{n}} =  \begin{pmatrix}2\\ 3\\ -1 \end{pmatrix}$\\
+d = 5\\
+shortest distance from origin = $$\left | \frac{5}{\sqrt{2^2+3^2+(-1)^2}}\right | = \frac{5}{\sqrt{14}}$$\\[10pt]
+
+\end{document}
